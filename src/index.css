@@ -62,3 +62,12 @@ body {
 }
 
 /* GLOBAL STYLES */
+
+body {
+  max-width: 1300px;
+  margin-inline: auto;
+}
+
+button {
+  cursor: pointer;
+}
