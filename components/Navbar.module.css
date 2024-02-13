@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 50px;
+}
+
+.logo button {
+  background-color: transparent;
+  border: transparent;
+}
+
+.links ul {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  text-transform: uppercase;
+}
+
+.links ul button {
+  text-transform: uppercase;
+}
