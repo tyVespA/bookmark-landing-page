@@ -1,7 +1,11 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
   padding-block: 50px;
+  padding-inline: 30px;
+  color: var(--grayish-blue);
 }
 
 .logo button {
@@ -11,9 +15,18 @@
 
 .links ul {
   display: flex;
+  align-items: center;
   list-style-type: none;
   gap: 40px;
   text-transform: uppercase;
+}
+
+.links ul a {
+  transition: color 0.3s;
+}
+
+.links ul a:hover {
+  color: var(--soft-red);
 }
 
 .links ul button {
