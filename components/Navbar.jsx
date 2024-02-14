@@ -14,9 +14,15 @@ export default function Navbar() {
       </div>
       <div className={styles.links}>
         <ul>
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>Contact</li>
+          <li>
+            <a href="/">Features</a>
+          </li>
+          <li>
+            <a href="/">Pricing</a>
+          </li>
+          <li>
+            <a href="/">Contact</a>
+          </li>
           <li>
             <button>Login</button>
           </li>
