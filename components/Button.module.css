@@ -1,0 +1,43 @@
+.button {
+  padding: 10px 30px;
+  border: 2px solid transparent;
+  color: white;
+  border-radius: 10px;
+}
+
+.red {
+  background-color: var(--soft-red);
+  transition: all 0.3s;
+}
+
+.red:hover {
+  color: var(--soft-red);
+  border-color: var(--soft-red);
+}
+
+.blue {
+  background-color: var(--soft-blue);
+  transition: all 0.3s;
+}
+
+.blue:hover {
+  color: var(--soft-blue);
+  border-color: var(--soft-blue);
+}
+
+.grey {
+  background-color: rgb(241, 241, 241);
+  color: var(--dark-blue);
+  transition: all 0.3s;
+}
+
+.grey:hover {
+  color: var(--dark-blue);
+  border-color: var(--dark-blue);
+}
+
+.red:hover,
+.blue:hover,
+.grey:hover {
+  background-color: white;
+}
