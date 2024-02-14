@@ -1,6 +1,7 @@
 import React from "react";
 import logoBookmark from "/logo-bookmark.svg";
 import styles from "./Navbar.module.css";
+import Button from "./Button";
 
 export default function Navbar() {
   return (
@@ -24,7 +25,7 @@ export default function Navbar() {
             <a href="/">Contact</a>
           </li>
           <li>
-            <button>Login</button>
+            <Button backgroundColor="red">Login</Button>
           </li>
         </ul>
       </div>
