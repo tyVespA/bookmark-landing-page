@@ -1,5 +1,6 @@
 import React from "react";
 import logoBookmark from "/logo-bookmark.svg";
+import iconHamburger from "/icon-hamburger.svg";
 import styles from "./Navbar.module.css";
 import Button from "./Button";
 
@@ -29,6 +30,9 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
+      <button className={styles.hamburgerButton}>
+        <img src={iconHamburger} alt="Open menu icon" />
+      </button>
     </div>
   );
 }
