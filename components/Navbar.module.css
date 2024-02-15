@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
   padding-block: 50px;
-  padding-inline: 30px;
   color: var(--grayish-blue);
 }
 
@@ -33,4 +33,22 @@
 .links ul button {
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.hamburgerButton {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .hamburgerButton {
+    display: block;
+  }
+
+  .links ul {
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+  }
 }
