@@ -64,12 +64,20 @@ body {
 /* GLOBAL STYLES */
 
 body {
-  max-width: 1300px;
+  max-width: 1200px;
   margin-inline: auto;
+  padding-inline: 30px;
+  overflow-x: hidden;
+}
+
+p {
+  color: var(--grayish-blue);
 }
 
 button {
   cursor: pointer;
+  background-color: transparent;
+  border: transparent;
 }
 
 a {
