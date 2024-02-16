@@ -4,7 +4,7 @@ import Button from "./Button";
 
 export default function Hero() {
   return (
-    <div className={styles.heroContainer}>
+    <section className={styles.heroContainer}>
       <div className={styles.textContainer}>
         <h1>A Simple Bookmark Manager</h1>
         <p>
@@ -19,6 +19,6 @@ export default function Hero() {
       <div className={styles.imageContainer}>
         <img src="../images/illustration-hero.svg" alt="" />
       </div>
-    </div>
+    </section>
   );
 }
