@@ -3,6 +3,7 @@
   align-items: center;
   flex: 1 1 0px;
   gap: 50px;
+  padding-bottom: 150px;
 }
 
 .heroContainer h1 {
