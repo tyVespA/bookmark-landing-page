@@ -1,0 +1,28 @@
+.featureSectionContainer {
+}
+
+.featureSectionContainer h2,
+.featureSectionContainer p:first-of-type {
+  text-align: center;
+}
+
+.featureSectionContainer h2 {
+  font-size: 30px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.featureSectionContainer p:first-of-type {
+  margin-inline: auto;
+  max-width: 45ch;
+  padding-bottom: 50px;
+}
+
+.tabsSection {
+  display: flex;
+  justify-content: center;
+}
+
+.tabsButton {
+  border: 1px solid var(--grayish-blue);
+}
