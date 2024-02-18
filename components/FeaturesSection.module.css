@@ -24,5 +24,20 @@
 }
 
 .tabsButton {
-  border: 1px solid var(--grayish-blue);
+  border-bottom: 1px solid var(--grayish-blue);
+  color: var(--grayish-blue);
+  padding: 20px 40px;
+  width: 235px;
+  transition: color 0.3s;
+}
+
+.tabsButton:hover {
+  color: var(--soft-red);
+}
+
+/* ACTIVE TAB STYLE */
+
+.active {
+  color: inherit;
+  border-bottom: 3px solid var(--soft-red);
 }
