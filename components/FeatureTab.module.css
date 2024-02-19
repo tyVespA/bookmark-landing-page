@@ -1,9 +1,10 @@
 .featureTabContainer {
   width: 1200px;
 
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  height: 416px;
   gap: 100px;
 
   transition: all 0.5s;
@@ -20,5 +21,5 @@
 }
 
 .imageContainer {
-  height: 416px;
+  /* height: 416px; */
 }
