@@ -1,8 +1,9 @@
 .featureSectionContainer {
+  /* padding-bottom: 50px; */
 }
 
 .featureSectionContainer h2,
-.featureSectionContainer p:first-of-type {
+.featureSectionContainer > p {
   text-align: center;
 }
 
@@ -12,7 +13,7 @@
   padding-bottom: 20px;
 }
 
-.featureSectionContainer p:first-of-type {
+.featureSectionContainer > p {
   margin-inline: auto;
   max-width: 45ch;
   padding-bottom: 50px;
@@ -21,6 +22,8 @@
 .tabsSection {
   display: flex;
   justify-content: center;
+  margin-inline: auto;
+  padding-bottom: 75px;
 }
 
 .tabsButton {
@@ -28,7 +31,10 @@
   color: var(--grayish-blue);
   padding: 20px 40px;
   width: 235px;
-  transition: color 0.3s;
+  transition: all 0.3s;
+
+  position: relative;
+  z-index: 1;
 }
 
 .tabsButton:hover {
@@ -39,5 +45,41 @@
 
 .active {
   color: inherit;
-  border-bottom: 3px solid var(--soft-red);
+}
+
+/* TABS SECTION */
+
+.tabsButton.active::after {
+  position: absolute;
+  z-index: 2;
+  content: "";
+  width: 235px;
+  height: 3px;
+  bottom: -1px;
+  left: 0;
+  background-color: var(--soft-red);
+}
+
+.featuresTabsSection {
+  display: flex;
+  position: relative;
+}
+
+.featuresTabsSection > div {
+  position: absolute;
+}
+
+.featuresTabsSection p {
+  max-width: 40ch;
+}
+
+.featureOneContainer {
+}
+
+.featureTwoContainer {
+  /* left: 1200px; */
+}
+
+.featureThreeContainer {
+  /* left: 2400px; */
 }
