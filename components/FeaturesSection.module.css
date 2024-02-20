@@ -1,5 +1,5 @@
 .featureSectionContainer {
-  /* padding-bottom: 50px; */
+  padding-bottom: 200px;
 }
 
 .featureSectionContainer h2,
@@ -62,7 +62,21 @@
 
 .featuresTabsSection {
   display: flex;
+  height: 416px;
   position: relative;
+}
+
+.featuresTabsSection::after {
+  content: "";
+  position: absolute;
+  top: 145px;
+  left: -700px;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  background-color: var(--soft-blue);
+
+  border-bottom-right-radius: 150px;
 }
 
 .featuresTabsSection > div {
