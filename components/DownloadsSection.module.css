@@ -1,0 +1,30 @@
+.downloadsSectionContainer {
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+.downloadsSectionContainer h2 {
+  padding-bottom: 20px;
+}
+
+.downloadsSectionContainer p {
+  max-width: 50ch;
+  margin-inline: auto;
+  padding-bottom: 50px;
+}
+
+.downloadTabsContainer {
+  display: flex;
+
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+
+.downloadTabsContainer div:nth-child(2) {
+  margin-top: 40px;
+}
+
+.downloadTabsContainer div:nth-child(3) {
+  margin-top: 80px;
+}
