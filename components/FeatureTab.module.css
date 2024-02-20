@@ -20,6 +20,6 @@
   padding-bottom: 30px;
 }
 
-.imageContainer {
-  /* height: 416px; */
+.imageContainer img {
+  margin-inline: auto;
 }
