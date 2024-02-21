@@ -5,15 +5,15 @@ import "./App.css";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import FeaturesSection from "../components/FeaturesSection";
+import DownloadsSection from "../components/DownloadsSection";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Navbar />
-      <Hero />
-      <FeaturesSection />
+      {/* <Hero /> */}
+      {/* <FeaturesSection /> */}
+      <DownloadsSection />
     </>
   );
 }
