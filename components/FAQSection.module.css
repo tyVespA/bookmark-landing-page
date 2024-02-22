@@ -1,0 +1,23 @@
+.FAQSectionContainer h2,
+.FAQSectionContainer > p {
+  text-align: center;
+  max-width: 45ch;
+  margin-inline: auto;
+}
+
+.FAQSectionContainer h2 {
+  padding-bottom: 10px;
+}
+
+.FAQSectionContainer > p {
+  padding-bottom: 30px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.FAQSectionContainer {
+  padding-bottom: 100px;
+}
