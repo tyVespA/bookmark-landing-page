@@ -1,0 +1,33 @@
+.footerBannerContainer {
+  text-align: center;
+  background-color: var(--soft-blue);
+  margin-inline: -1000px;
+  padding-block: 70px;
+}
+
+.footerBannerContainer p {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 30px;
+}
+
+.footerBannerContainer h2 {
+  color: white;
+  max-width: 20ch;
+  margin-inline: auto;
+  padding-bottom: 50px;
+}
+
+.footerBannerContainer form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footerBannerContainer input {
+  border-radius: 10px;
+  padding-inline: 20px;
+  width: 300px;
+  border: transparent;
+}
