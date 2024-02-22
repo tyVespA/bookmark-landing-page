@@ -6,6 +6,8 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import FeaturesSection from "../components/FeaturesSection";
 import DownloadsSection from "../components/DownloadsSection";
+import FAQSection from "../components/FAQSection";
+import FooterBanner from "../components/FooterBanner";
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       <Navbar />
       {/* <Hero /> */}
       {/* <FeaturesSection /> */}
-      <DownloadsSection />
+      {/* <DownloadsSection /> */}
+      <FAQSection />
+      <FooterBanner />
     </>
   );
 }
