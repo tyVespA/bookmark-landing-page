@@ -8,6 +8,7 @@ import FeaturesSection from "../components/FeaturesSection";
 import DownloadsSection from "../components/DownloadsSection";
 import FAQSection from "../components/FAQSection";
 import FooterBanner from "../components/FooterBanner";
+import Footer from "../components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       {/* <DownloadsSection /> */}
       <FAQSection />
       <FooterBanner />
+      <Footer />
     </>
   );
 }
