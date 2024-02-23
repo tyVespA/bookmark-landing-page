@@ -1,0 +1,53 @@
+.footerContainer {
+  background-color: var(--dark-blue);
+  padding-block: 20px;
+  margin-inline: -1000px;
+}
+
+.footer {
+  width: 1200px;
+  padding-inline: 30px;
+
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 40px;
+}
+
+.links ul a {
+  transition: color 0.3s;
+}
+
+.links ul a:hover {
+  color: var(--soft-red);
+}
+
+.footer ul {
+  color: white;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.socialsContainer {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.socialsContainer svg {
+  fill: white;
+  transition: all 0.3s;
+}
+
+.socialsContainer a:hover svg {
+  fill: var(--soft-red);
+}
