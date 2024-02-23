@@ -1,5 +1,4 @@
 .footerContainer {
-  /* background-color: var(--dark-blue); */
   padding-block: 20px;
   max-width: 1140px;
   padding-inline: 30px;
@@ -61,5 +60,22 @@
   fill: var(--soft-red);
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (max-width: 860px) {
+  .footerContainer {
+    flex-direction: column;
+    padding-block: 40px;
+  }
+
+  .links,
+  .links ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .links ul {
+    padding-left: 0;
+    padding-bottom: 40px;
+    gap: 30px;
+  }
 }
