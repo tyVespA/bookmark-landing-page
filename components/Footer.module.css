@@ -1,17 +1,26 @@
 .footerContainer {
-  background-color: var(--dark-blue);
+  /* background-color: var(--dark-blue); */
   padding-block: 20px;
-  margin-inline: -1000px;
-}
-
-.footer {
-  width: 1200px;
+  max-width: 1140px;
   padding-inline: 30px;
 
-  margin-inline: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: relative;
+  z-index: 1;
+}
+
+.footerContainer::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -500px;
+  bottom: 0;
+  left: -500px;
+  background-color: var(--dark-blue);
+  z-index: -1;
 }
 
 .links {
@@ -27,7 +36,7 @@
   color: var(--soft-red);
 }
 
-.footer ul {
+.footerContainer ul {
   color: white;
   display: flex;
   align-items: center;
@@ -50,4 +59,7 @@
 
 .socialsContainer a:hover svg {
   fill: var(--soft-red);
+}
+
+@media screen and (min-width: 860px) {
 }
