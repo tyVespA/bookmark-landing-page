@@ -50,6 +50,12 @@
   outline: none;
 }
 
+.errorIcon {
+  position: absolute;
+  left: 500px;
+  top: 13px;
+}
+
 .errorMessage {
   background-color: var(--soft-red);
   color: white;
