@@ -8,7 +8,7 @@ export default function FooterBanner() {
       <p>35,000+ already joined</p>
       <h2>Stay up-to-date with what we’re doing</h2>
       <form action="">
-        <input type="text" placeholder="Enter your email address" />
+        <input type="email" placeholder="Enter your email address" required />
         <Button backgroundColor="red">Contact Us</Button>
       </form>
     </section>
