@@ -35,13 +35,33 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+  position: relative;
 }
 
 .footerBannerContainer input {
   border-radius: 10px;
   padding-inline: 20px;
   width: 300px;
-  border: transparent;
+  border: 3px solid transparent;
+}
+
+.footerBannerContainer input:focus {
+  border: 3px solid var(--soft-red);
+  outline: none;
+}
+
+.errorMessage {
+  background-color: var(--soft-red);
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  z-index: -1;
+  top: 40px;
+  left: 230px;
+  width: 299px;
+  text-align: start;
+  padding: 10px 10px 5px 10px;
+  border-radius: 0 0 10px 10px;
 }
 
 @media screen and (max-width: 580px) {
