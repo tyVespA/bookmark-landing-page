@@ -38,6 +38,13 @@ export default function FooterBanner() {
           onChange={handleEmailChange}
         />
         {errorMessage && (
+          <img
+            src="../images/icon-error.svg"
+            alt="icon error"
+            className={styles.errorIcon}
+          />
+        )}
+        {errorMessage && (
           <div className={styles.errorMessage}>{errorMessage}</div>
         )}
         <Button type="submit" backgroundColor="red">
