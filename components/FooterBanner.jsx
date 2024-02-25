@@ -14,8 +14,6 @@ export default function FooterBanner() {
   const handleSubmit = (e) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // const value = e.target.value;
-
     if (!emailRegex.test(email)) {
       e.preventDefault();
       setErrorMessage("Please enter a valid email address");
@@ -29,23 +27,26 @@ export default function FooterBanner() {
       <p>35,000+ already joined</p>
       <h2>Stay up-to-date with what we’re doing</h2>
       <form action="" onSubmit={handleSubmit} noValidate>
-        <input
-          type="email"
-          value={email}
-          placeholder="Enter your email address"
-          required
-          onChange={handleEmailChange}
-        />
-        {errorMessage && (
-          <img
-            src="../images/icon-error.svg"
-            alt="icon error"
-            className={styles.errorIcon}
+        <div className={styles.inputContainer}>
+          <input
+            type="email"
+            value={email}
+            placeholder="Enter your email address"
+            required
+            onChange={handleEmailChange}
           />
-        )}
-        {errorMessage && (
-          <div className={styles.errorMessage}>{errorMessage}</div>
-        )}
+          {errorMessage && (
+            <img
+              src="../images/icon-error.svg"
+              alt="icon error"
+              className={styles.errorIcon}
+            />
+          )}
+          {errorMessage && (
+            <div className={styles.errorMessage}>{errorMessage}</div>
+          )}
+        </div>
+
         <Button type="submit" backgroundColor="red">
           Contact Us
         </Button>
