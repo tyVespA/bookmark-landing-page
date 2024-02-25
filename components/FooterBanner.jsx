@@ -12,13 +12,12 @@ export default function FooterBanner() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    const value = e.target.value;
+    // const value = e.target.value;
 
-    if (!emailRegex.test(value)) {
+    if (!emailRegex.test(email)) {
+      e.preventDefault();
       setErrorMessage("Please enter a valid email address");
     } else {
       setErrorMessage("");
