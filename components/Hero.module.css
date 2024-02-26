@@ -49,3 +49,31 @@
 
   border-bottom-left-radius: 150px;
 }
+
+@media screen and (max-width: 1130px) {
+  .heroContainer {
+    flex-direction: column-reverse;
+  }
+
+  .textContainer {
+    text-align: center;
+  }
+
+  .textContainer p {
+    margin-inline: auto;
+  }
+
+  .buttonsContainer {
+    justify-content: center;
+  }
+
+  .imageContainer img {
+    margin-left: 0;
+    margin-top: 0;
+    transform: scale(1);
+  }
+
+  .imageContainer::after {
+    top: 100px;
+  }
+}
