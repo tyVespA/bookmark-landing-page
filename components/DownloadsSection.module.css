@@ -28,3 +28,20 @@
 .downloadTabsContainer div:nth-child(3) {
   margin-top: 80px;
 }
+
+@media screen and (max-width: 980px) {
+  .downloadsSectionContainer {
+    padding-bottom: 100px;
+  }
+  .downloadTabsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .downloadTabsContainer div:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .downloadTabsContainer div:nth-child(3) {
+    margin-top: 0;
+  }
+}
