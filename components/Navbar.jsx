@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import logoBookmark from "/logo-bookmark.svg";
+import logoBookmarkWhite from "/logo-bookmark-white.svg";
 import iconHamburger from "/icon-hamburger.svg";
 import iconClose from "/icon-close.svg";
 import styles from "./Navbar.module.css";
@@ -11,19 +12,34 @@ export default function Navbar() {
 
   function handleClick() {
     setMenuOpened(!menuOpened);
-    console.log(menuOpened);
   }
 
   return (
     <div className={styles.navbar}>
+      <div
+        className={`${styles.openedMenuOverlay} ${
+          menuOpened ? "almostVisible" : "hidden"
+        }`}
+      ></div>
       <div className={styles.logo}>
         <button>
           <a href="/">
-            <img src={logoBookmark} alt="Bookmark logo" />
+            <img
+              src={logoBookmark}
+              alt="Bookmark logo"
+              className={`${menuOpened ? "displayNone" : ""}`}
+            />
+            <img
+              src={logoBookmarkWhite}
+              alt="Bookmark logo"
+              className={`${menuOpened ? "" : "displayNone"}`}
+            />
           </a>
         </button>
       </div>
-      <div className={`${styles.links} ${menuOpened ? "" : "displayNone"}`}>
+      <div
+        className={`${styles.links} ${menuOpened ? "" : styles.displayNone}`}
+      >
         <ul>
           <li>
             <a href="/">Features</a>
@@ -41,13 +57,13 @@ export default function Navbar() {
       </div>
       <button
         className={`${menuOpened ? "displayNone" : styles.hamburgerButton}`}
-        onClick={handleClick}
+        onClick={() => setMenuOpened(!menuOpened)}
       >
         <img src={iconHamburger} alt="Open menu icon" />
       </button>
       <button
         className={`${menuOpened ? styles.closeButton : "displayNone"}`}
-        onClick={handleClick}
+        onClick={() => setMenuOpened(!menuOpened)}
       >
         <img src={iconClose} alt="Close menu icon" />
       </button>
