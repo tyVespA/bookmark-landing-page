@@ -1,10 +1,19 @@
 import React from "react";
+import { useState } from "react";
 import logoBookmark from "/logo-bookmark.svg";
 import iconHamburger from "/icon-hamburger.svg";
+import iconClose from "/icon-close.svg";
 import styles from "./Navbar.module.css";
 import Button from "./Button";
 
 export default function Navbar() {
+  const [menuOpened, setMenuOpened] = useState(false);
+
+  function handleClick() {
+    setMenuOpened(!menuOpened);
+    console.log(menuOpened);
+  }
+
   return (
     <div className={styles.navbar}>
       <div className={styles.logo}>
@@ -14,7 +23,7 @@ export default function Navbar() {
           </a>
         </button>
       </div>
-      <div className={styles.links}>
+      <div className={`${styles.links} ${menuOpened ? "" : "displayNone"}`}>
         <ul>
           <li>
             <a href="/">Features</a>
@@ -30,8 +39,17 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
-      <button className={styles.hamburgerButton}>
+      <button
+        className={`${menuOpened ? "displayNone" : styles.hamburgerButton}`}
+        onClick={handleClick}
+      >
         <img src={iconHamburger} alt="Open menu icon" />
+      </button>
+      <button
+        className={`${menuOpened ? styles.closeButton : "displayNone"}`}
+        onClick={handleClick}
+      >
+        <img src={iconClose} alt="Close menu icon" />
       </button>
     </div>
   );
