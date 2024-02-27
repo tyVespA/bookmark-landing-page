@@ -102,6 +102,10 @@ h3 {
   opacity: 0;
 }
 
+.displayNone {
+  display: none;
+}
+
 .visible {
   opacity: 1;
 }
