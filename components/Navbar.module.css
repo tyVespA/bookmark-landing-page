@@ -11,6 +11,8 @@
 .logo button {
   background-color: transparent;
   border: transparent;
+  position: relative;
+  z-index: 100;
 }
 
 .links ul {
@@ -37,13 +39,36 @@
 
 .hamburgerButton {
   display: none;
+  z-index: 100;
 }
 
 .closeButton {
   display: none;
+  z-index: 100;
+}
+
+.openedMenuOverlay {
+  display: none;
 }
 
 @media screen and (max-width: 750px) {
+  .openedMenuOverlay {
+    content: "";
+    position: absolute;
+    display: block;
+    transition: all 0.2s;
+    background-color: var(--dark-blue);
+    top: 0;
+    right: -100vh;
+    bottom: -100vh;
+    left: -100vh;
+    z-index: 99;
+  }
+
+  .displayNone {
+    display: none;
+  }
+
   .hamburgerButton {
     display: block;
   }
@@ -54,6 +79,10 @@
 
   .links ul {
     position: absolute;
+    transition: all 0.2s;
+
+    color: white;
+    top: 150px;
     right: 50%;
     left: 50%;
     transform: translateX(-50%);
