@@ -39,8 +39,16 @@
   display: none;
 }
 
+.closeButton {
+  display: none;
+}
+
 @media screen and (max-width: 750px) {
   .hamburgerButton {
+    display: block;
+  }
+
+  .closeButton {
     display: block;
   }
 
@@ -50,5 +58,6 @@
     left: 50%;
     transform: translateX(-50%);
     flex-direction: column;
+    z-index: 100;
   }
 }
