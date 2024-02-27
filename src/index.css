@@ -68,6 +68,7 @@ body {
   margin-inline: auto;
   padding-inline: 30px;
   overflow-x: hidden;
+  position: relative;
 }
 
 p {
@@ -100,6 +101,7 @@ h3 {
 
 .hidden {
   opacity: 0;
+  z-index: -10;
 }
 
 .displayNone {
@@ -108,4 +110,8 @@ h3 {
 
 .visible {
   opacity: 1;
+}
+
+.almostVisible {
+  opacity: 90%;
 }
