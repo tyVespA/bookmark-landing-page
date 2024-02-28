@@ -38,6 +38,10 @@
   border-color: var(--dark-blue);
 }
 
+.transparent {
+  border-color: white;
+}
+
 .red:hover,
 .blue:hover,
 .grey:hover {
