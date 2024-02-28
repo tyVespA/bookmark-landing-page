@@ -12,6 +12,12 @@ export default function Navbar() {
 
   function handleClick() {
     setMenuOpened(!menuOpened);
+
+    if (!menuOpened) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
   }
 
   return (
@@ -57,13 +63,13 @@ export default function Navbar() {
       </div>
       <button
         className={`${menuOpened ? "displayNone" : styles.hamburgerButton}`}
-        onClick={() => setMenuOpened(!menuOpened)}
+        onClick={handleClick}
       >
         <img src={iconHamburger} alt="Open menu icon" />
       </button>
       <button
         className={`${menuOpened ? styles.closeButton : "displayNone"}`}
-        onClick={() => setMenuOpened(!menuOpened)}
+        onClick={handleClick}
       >
         <img src={iconClose} alt="Close menu icon" />
       </button>
