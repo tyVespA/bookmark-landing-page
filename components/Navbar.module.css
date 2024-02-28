@@ -52,6 +52,10 @@
   display: none;
 }
 
+.mobileSocials {
+  display: none;
+}
+
 @media screen and (max-width: 750px) {
   .openedMenuOverlay {
     content: "";
@@ -86,6 +90,19 @@
     left: 0;
     right: 0;
     flex-direction: column;
+    z-index: 100;
+  }
+
+  .mobileSocials {
+    position: absolute;
+    top: 90vh;
+    left: 50%;
+    transform: translateX(-50%);
+    fill: white;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
     z-index: 100;
   }
 }
