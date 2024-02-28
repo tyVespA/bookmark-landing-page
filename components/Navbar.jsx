@@ -57,7 +57,9 @@ export default function Navbar() {
             <a href="/">Contact</a>
           </li>
           <li>
-            <Button backgroundColor="red">Login</Button>
+            <Button backgroundColor={menuOpened ? "transparent" : "red"}>
+              Login
+            </Button>
           </li>
         </ul>
       </div>
